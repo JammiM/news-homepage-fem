@@ -85,7 +85,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [fluid typography calculator](https://royalfig.github.io/fluid-typography-calculator/) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [tinypng.com](https://tinypng.com/) - Useful for compressing file sizes.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
