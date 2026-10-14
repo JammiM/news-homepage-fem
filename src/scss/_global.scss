@@ -1,3 +1,5 @@
+@use "util" as u;
+
 :root {
   --c-white: #fffdfa;
   --c-blue: #00001a;
@@ -17,4 +19,6 @@
     1.823943661971831rem + 0.7511737089201878vw,
     2.5rem
   ); // 32px, 40px
+
+  --fs-s: u.rem(20);
 }
