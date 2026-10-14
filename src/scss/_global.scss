@@ -5,4 +5,16 @@
   --c-red: #f15d51;
   --c-silver: #c5c6ce;
   --c-yellow: #e9aa52;
+
+  --fs-xl: clamp(
+    2.5rem,
+    2.147887323943662rem + 1.5023474178403755vw,
+    3.5rem
+  ); //40px, 56px
+
+  --fs-l: clamp(
+    2rem,
+    1.823943661971831rem + 0.7511737089201878vw,
+    2.5rem
+  ); // 32px, 40px
 }
