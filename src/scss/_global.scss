@@ -9,16 +9,19 @@
   --c-yellow: #e9aa52;
 
   --fs-xl: clamp(
-    2.5rem,
+    u.rem(40),
     2.147887323943662rem + 1.5023474178403755vw,
-    3.5rem
-  ); //40px, 56px
+    u.rem(56)
+  );
 
   --fs-l: clamp(
-    2rem,
+    u.rem(32),
     1.823943661971831rem + 0.7511737089201878vw,
-    2.5rem
-  ); // 32px, 40px
+    u.rem(40)
+  );
 
-  --fs-s: u.rem(20);
+  --f-m: u.rem(32);
+  --f-s: u.rem(20);
+  --f-xs: u.rem(18);
+  --f-body: u.rem(15);
 }
