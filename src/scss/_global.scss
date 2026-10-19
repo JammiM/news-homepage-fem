@@ -60,3 +60,9 @@ p {
 a {
   text-decoration: none;
 }
+
+.wrapper {
+  width: min(u.rem(1110), calc(100% - u.rem(32)));
+  margin-inline: auto;
+  border: 1px solid red;
+}
