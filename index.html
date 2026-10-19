@@ -41,7 +41,17 @@
     <main>
       <article class="wrapper grid">
         <section class="feature">
-          <img src="" class="feature__image" alt="" />
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./src/assets/img/image-web-3-desktop.jpg"
+            />
+            <img
+              src="./src/assets/img/image-web-3-mobile.jpg"
+              class="feature__image"
+              alt="group of differently coloured shapes"
+            />
+          </picture>
           <h1 class="feature__title">The Bright Future of Web 3.0?</h1>
           <p class="feature__desc">
             We dive into the next evolution of the web that claims to put the
