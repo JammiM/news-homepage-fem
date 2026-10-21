@@ -1,15 +1,37 @@
 @use "../util/" as u;
 
 .new {
+  background-color: var(--c-blue);
+  padding: u.rem(24) u.rem(20);
+
   &__title {
+    color: var(--c-yellow);
+
+    font-size: clamp(
+      u.rem(32),
+      1.823943661971831rem + 0.7511737089201878vw,
+      u.rem(40)
+    );
   }
 
   &__post {
+    border-block-end: 1px solid var(--c-gray);
+    padding-block: u.rem(30);
+
+    &:last-child {
+      border: none;
+    }
   }
 
   &__headline {
+    color: var(--c-white);
+    font-weight: 800;
+    font-size: u.rem(20);
+    margin-block-end: u.rem(8);
   }
 
   &__desc {
+    color: var(--c-silver);
+    font-size: var(--f-body);
   }
 }
