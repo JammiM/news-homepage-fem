@@ -5,11 +5,28 @@
   }
 
   &__title {
+    font-size: u.rem(40);
+    font-size: clamp(
+      u.rem(40),
+      2.147887323943662rem + 1.5023474178403755vw,
+      u.rem(56)
+    );
+    font-weight: 800;
   }
 
   &__desc {
   }
 
   &__btn {
+    display: inline-block;
+    background-color: var(--c-red);
+    color: var(--c-white);
+    text-transform: uppercase;
+    font-size: u.rem(14);
+    font-weight: 700;
+    padding: u.rem(12) u.rem(30);
+
+    // padding-inline: 30px;
+    // padding-block: 90px;
   }
 }

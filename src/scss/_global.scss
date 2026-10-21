@@ -42,12 +42,15 @@ body {
   min-height: 100dvh;
   font-family: "Inter", sans-serif;
   line-height: 1.7;
+  font-size: u.rem(15);
+  color: var(--c-gray);
 }
 
 h1,
 h2,
 h3 {
   line-height: 1.1;
+  color: var(--c-blue);
 }
 
 h1,
