@@ -6,11 +6,7 @@
 
   &__title {
     font-size: u.rem(40);
-    font-size: clamp(
-      u.rem(40),
-      2.147887323943662rem + 1.5023474178403755vw,
-      u.rem(56)
-    );
+    font-size: var(--fs-xl);
     font-weight: 800;
   }
 
