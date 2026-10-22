@@ -51,6 +51,8 @@ p {
 
 a {
   text-decoration: none;
+  transition: 150ms ease-in;
+  transition-property: color, background-color;
 }
 
 img {

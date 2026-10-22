@@ -42,5 +42,10 @@
 
     // padding-inline: 30px;
     // padding-block: 90px;
+
+    &:hover {
+      color: var(--c-white);
+      background-color: var(--c-blue);
+    }
   }
 }

@@ -29,6 +29,10 @@
     font-weight: 800;
     font-size: u.rem(20);
     margin-block-end: u.rem(8);
+
+    &:hover {
+      color: var(--c-yellow);
+    }
   }
 
   &__desc {

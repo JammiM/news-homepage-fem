@@ -6,9 +6,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    padding-block-start: u.rem(90);
-    padding-block-end: u.rem(50);
+    padding-block: u.rem(90) u.rem(50);
   }
 
   &__logo {
@@ -34,6 +32,10 @@
     @media (width >= u.rem(1110)) {
       color: var(--c-gray);
       font-size: var(--f-body);
+    }
+
+    &:hover {
+      color: var(--c-red);
     }
   }
 }
