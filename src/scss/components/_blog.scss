@@ -4,6 +4,13 @@
   display: grid;
   gap: u.rem(30);
 
+  @media (width >= u.em(1110)) {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+  }
+
   &__item {
     display: grid;
     grid-template-columns: u.rem(100) auto;
