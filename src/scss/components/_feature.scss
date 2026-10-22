@@ -25,6 +25,12 @@
     font-weight: 800;
   }
 
+  &__desc {
+    & p {
+      margin-block-end: u.rem(30);
+    }
+  }
+
   &__btn {
     display: inline-block;
     background-color: var(--c-red);
