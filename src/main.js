@@ -13,12 +13,14 @@ function openNavMenuHandler() {
   body.classList.add("noscroll");
   navSection.removeAttribute("inert");
   main.setAttribute("inert", "");
+  btnClose.focus();
 }
 function closeNavMenuHandler() {
   btnOpen.setAttribute("aria-expanded", "false");
   body.classList.remove("noscroll");
   navSection.setAttribute("inert", "");
   main.removeAttribute("inert");
+  btnOpen.focus();
 }
 
 function setNav(ev) {
