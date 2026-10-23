@@ -1,25 +1,17 @@
 import "./scss/style.scss";
 
-// const btnOpen = document.getElementById("btnOpen");
-// const btnClose = document.getElementById("btnClose");
-
 const btnOpen = document.querySelector("#btnOpen");
 const btnClose = document.querySelector("#btnClose");
 const navSection = document.querySelector(".nav__content");
 const navOverlay = document.querySelector(".nav__overlay");
 const media = window.matchMedia("(width < 69.375em)");
 
-btnOpen.addEventListener("click", (ev) => {
+function handleNavMenuOpen(ev) {
   ev.target.parentElement.setAttribute("aria-expanded", "true");
-});
-
-btnClose.addEventListener("click", () => {
-  console.log("closed");
-});
+}
+function handleNavMenuClose() {}
 
 function setNav(ev) {
-  console.log(navSection);
-
   if (ev.matches) {
     console.log("is mobile");
 
@@ -32,6 +24,10 @@ function setNav(ev) {
     navSection.style.display = "";
   }
 }
+
+btnOpen.addEventListener("click", handleNavMenuOpen);
+
+btnClose.addEventListener("click", handleNavMenuClose);
 
 setNav(media);
 
