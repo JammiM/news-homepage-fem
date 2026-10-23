@@ -19,10 +19,15 @@
       transition-property: translate;
       position: fixed;
 
-      // z-index: 1;
       inset: 0 0 0 u.rem(120);
       padding: u.rem(30);
       background-color: var(--c-white);
+    }
+
+    @media (prefers-reduced-motion) {
+      translate: 0;
+      opacity: 0;
+      transition: opacity 500ms ease-in-out;
     }
   }
 
@@ -30,6 +35,10 @@
     &[aria-expanded="true"] {
       & ~ .nav__content {
         translate: 0;
+
+        @media (prefers-reduced-motion) {
+          opacity: 1;
+        }
       }
 
       & ~ .nav__overlay {
