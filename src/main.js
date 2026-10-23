@@ -6,16 +6,19 @@ const navSection = document.querySelector(".nav__content");
 const navOverlay = document.querySelector(".nav__overlay");
 const media = window.matchMedia("(width < 69.375em)");
 const body = document.querySelector("body");
+const main = document.querySelector("main");
 
 function openNavMenuHandler() {
   btnOpen.setAttribute("aria-expanded", "true");
   body.classList.add("noscroll");
   navSection.removeAttribute("inert");
+  main.setAttribute("inert", "");
 }
 function closeNavMenuHandler() {
   btnOpen.setAttribute("aria-expanded", "false");
   body.classList.remove("noscroll");
   navSection.setAttribute("inert", "");
+  main.removeAttribute("inert");
 }
 
 function setNav(ev) {
