@@ -6,6 +6,7 @@ import "./scss/style.scss";
 const btnOpen = document.querySelector("#btnOpen");
 const btnClose = document.querySelector("#btnClose");
 const navSection = document.querySelector(".nav__content");
+const navOverlay = document.querySelector(".nav__overlay");
 const media = window.matchMedia("(width < 69.375em)");
 
 btnOpen.addEventListener("click", (ev) => {
@@ -24,6 +25,7 @@ function setNav(ev) {
 
     setTimeout(() => {
       navSection.style.display = "block";
+      navOverlay.style.display = "block";
     }, "500ms");
   } else {
     console.log("is desktop");
