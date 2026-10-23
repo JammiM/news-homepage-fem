@@ -26,6 +26,18 @@
     }
   }
 
+  &__open {
+    &[aria-expanded="true"] {
+      // background-color: red;
+
+      & ~ .nav__content {
+        translate: 0;
+        background-color: red;
+        display: block;
+      }
+    }
+  }
+
   &__close {
     display: block;
     margin-inline-start: auto;
