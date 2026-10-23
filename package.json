@@ -8,9 +8,12 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint-css": "npx stylelint '**/*.scss'",
-    "lint-css-fix": "npx stylelint '**/*.scss' --fix"
+    "lint-css-fix": "npx stylelint '**/*.scss' --fix",
+    "eslint": "npx eslint '**/src/*.js'"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
     "sass": "^1.105.1",
     "stylelint": "^17.16.0",
     "stylelint-config-standard-scss": "^17.0.0",
