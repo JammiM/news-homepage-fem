@@ -6,10 +6,12 @@ const navSection = document.querySelector(".nav__content");
 const navOverlay = document.querySelector(".nav__overlay");
 const media = window.matchMedia("(width < 69.375em)");
 
-function handleNavMenuOpen(ev) {
+function OpenNavMenuHandler(ev) {
   ev.target.parentElement.setAttribute("aria-expanded", "true");
 }
-function handleNavMenuClose() {}
+function CloseNavMenuHandler(ev) {
+  ev.target.parentElement.setAttribute("aria-expanded", "false");
+}
 
 function setNav(ev) {
   if (ev.matches) {
@@ -25,9 +27,9 @@ function setNav(ev) {
   }
 }
 
-btnOpen.addEventListener("click", handleNavMenuOpen);
+btnOpen.addEventListener("click", OpenNavMenuHandler);
 
-btnClose.addEventListener("click", handleNavMenuClose);
+btnClose.addEventListener("click", CloseNavMenuHandler);
 
 setNav(media);
 
