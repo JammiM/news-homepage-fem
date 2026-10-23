@@ -10,15 +10,18 @@ const body = document.querySelector("body");
 function openNavMenuHandler() {
   btnOpen.setAttribute("aria-expanded", "true");
   body.classList.add("noscroll");
+  navSection.removeAttribute("inert");
 }
 function closeNavMenuHandler() {
   btnOpen.setAttribute("aria-expanded", "false");
   body.classList.remove("noscroll");
+  navSection.setAttribute("inert", "");
 }
 
 function setNav(ev) {
   if (ev.matches) {
     console.log("is mobile");
+    navSection.setAttribute("inert", "");
 
     setTimeout(() => {
       navSection.style.display = "block";
@@ -26,6 +29,7 @@ function setNav(ev) {
     }, "500ms");
   } else {
     console.log("is desktop");
+    navSection.removeAttribute("inert");
     navSection.style.display = "";
   }
 }
