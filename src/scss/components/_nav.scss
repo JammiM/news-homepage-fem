@@ -1,0 +1,17 @@
+@use "../util/" as u;
+
+.nav {
+  button {
+    background: none;
+    border: none;
+  }
+
+  // &__open {
+  // }
+
+  &__content {
+    @media (width < u.em(1110)) {
+      background-color: red;
+    }
+  }
+}
