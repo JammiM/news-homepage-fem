@@ -4,14 +4,41 @@
   button {
     background: none;
     border: none;
-  }
+    padding: 0;
 
-  // &__open {
-  // }
+    @media (width >= u.em(1110)) {
+      display: none;
+    }
+  }
 
   &__content {
     @media (width < u.em(1110)) {
-      background-color: red;
+      display: none;
+      translate: 100vw 0;
+      transition: translate 500ms ease-in-out;
+      transition-property: translate;
+      position: fixed;
+
+      // z-index: 1;
+      inset: 0 0 0 u.rem(120);
+      padding: u.rem(30);
+      background-color: var(--c-white);
     }
+  }
+
+  &__close {
+    display: block;
+    margin-inline-start: auto;
+    margin-block-end: u.rem(80);
+  }
+
+  &__overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    background-color: var(--c-blue);
+    transition: opacity 300ms ease-in-out;
+    transition-property: opacity;
   }
 }
