@@ -20,10 +20,14 @@
   }
 
   &__number {
-    color: var(--c-silver);
+    color: var(--c-blue);
     font-size: var(--f-m);
     font-weight: 700;
     line-height: 1;
+
+    @supports (color: contrast-color(red)) {
+      color: contrast-color(var(--bg-color));
+    }
   }
 
   &__image {

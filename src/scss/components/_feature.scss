@@ -35,6 +35,11 @@
     display: inline-block;
     background-color: var(--c-red);
     color: var(--c-white);
+
+    @supports (color: contrast-color(red)) {
+      color: contrast-color(var(--c-red));
+    }
+
     text-transform: uppercase;
     font-size: u.rem(14);
     font-weight: 700;
