@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint-css": "npx stylelint '**/*.scss'",
     "lint-css-fix": "npx stylelint '**/*.scss' --fix",
-    "eslint": "npx eslint '**/src/*.js'"
+    "eslint": "npx eslint '**/*.js'"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
