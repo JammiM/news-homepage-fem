@@ -5,12 +5,15 @@ const btnClose = document.querySelector("#btnClose");
 const navSection = document.querySelector(".nav__content");
 const navOverlay = document.querySelector(".nav__overlay");
 const media = window.matchMedia("(width < 69.375em)");
+const body = document.querySelector("body");
 
 function openNavMenuHandler() {
   btnOpen.setAttribute("aria-expanded", "true");
+  body.classList.add("noscroll");
 }
 function closeNavMenuHandler() {
   btnOpen.setAttribute("aria-expanded", "false");
+  body.classList.remove("noscroll");
 }
 
 function setNav(ev) {
