@@ -32,6 +32,7 @@ function setNav(ev) {
     }, "500ms");
   } else {
     console.log("is desktop");
+    main.removeAttribute("inert");
     navSection.removeAttribute("inert");
     navSection.style.display = "";
   }
