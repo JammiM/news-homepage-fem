@@ -1,6 +1,8 @@
 @use "../util/" as u;
 
-.nav {
+$block: "nav";
+
+.#{$block} {
   button {
     background: none;
     border: none;
@@ -32,7 +34,7 @@
 
   &__open {
     &[aria-expanded="true"] {
-      & ~ .nav__content {
+      & ~ .#{$block}__content {
         translate: 0;
 
         @media (prefers-reduced-motion) {
@@ -40,7 +42,7 @@
         }
       }
 
-      & ~ .nav__overlay {
+      & ~ .#{$block}__overlay {
         opacity: 0.5;
       }
     }
